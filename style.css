@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/400/777/desktop-wallpaper-retro-80s-grid-gaming-sunrise-retro.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header {
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #9d00ff;
+    color: #FFF;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 0 50px #9d00ff, 0 0 10px #9d00ff, 0 0 15px #9d00ff;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    text-shadow: 0 0 50px #9d00ff, 0 0 10px #9d00ff, 0 0 15px #9d00ff;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+nav,
+.gameboard,
+aside {
+    margin: 7px;
+    padding: 0;
+    flex: 1;
+    border-radius: 12px;
+    border: 2px solid #9d00ff;
+    box-shadow: 15px 15px 50px #9d00ff;
+    text-align: center;
+    height: 600px;
+}
+
+#twoPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #FFF;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+#input2,
+#input3 {
+    margin-top: 10px;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #9d00ff;
+    box-shadow: 15px 15px 50px #9d00ff;
+    border-radius: 3px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+}
+
+#submitButton {
+    margin-top: 0;
+    width: 150px;
+    height: 40px;
+    border: 2px solid orange;
+    box-shadow: 15px 15px 50px orangered;
+    border-radius: 12px;
+    font-family: 'Press Start 2P', cursive;
+    color: #FFF;
+    font-size: 15px;
+    background-color: black;
+    background-size: cover;
+}
+
+#submitButton:hover {
+    background-image: url("https://media.istockphoto.com/id/1267520400/id/vektor/efek-cahaya-neon-menunjukkan-garis-dalam-arah-diagonal.jpg?s=170667a&w=0&k=20&c=ZV1QcGMGCVlfrQ00_v4782VLEIMnJ9dgH2IwsVI-D44=");
+}
+
+#submitButton:active {
+    background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-diagonal-line-neon-light-background-picture-image_1237642.jpg");
+}
+
+.gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+}
+
+content {
+    display: grid;
+    grid-template-columns: stretch;
+}
+
+aside {
+    color: white;
+    font-family: 'Press Start 2P';
+}
+
+
+.parent {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    width: auto;
+}
+
+.child {
+    border: 1px solid #9d00ff;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 50px;
+    background-image: url("https://img.freepik.com/premium-vector/futuristic-abstract-background-retro-80s-90s-style-glitch-effect-geometric-neon-grid-pattern_541122-432.jpg");
+    background-size: cover;
+    margin: 3px;
+}
+
+
+.child:hover {
+    background: url("https://w0.peakpx.com/wallpaper/654/738/HD-wallpaper-grid-black-dark-green-line-square-texture.jpg");
+    background-size: cover;
+}
+
+.child:active {
+    background: url("https://img.freepik.com/premium-vector/futuristic-abstract-background-retro-80s-90s-style-glitch-effect-geometric-neon-grid-pattern_541122-432.jpg");
+    background-size: cover;
+}
+
+.child-one {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    border-top-left-radius: 25px;
+}
+
+.child-two {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.child-three {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    border-top-right-radius: 25px;
+}
+
+.child-four {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.child-five {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.child-six {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.child-seven {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    border-bottom-left-radius: 25px;
+}
+
+.child-eight {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.child-nine {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+    border-bottom-right-radius: 25px;
+}
+
+.reset {
+    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 60px;
+    border: 2px solid orange;
+    box-shadow: 15px 15px 50px orangered;
+    border-radius: 12px;
+    font-family: 'Press Start 2P', cursive;
+    color: #FFF;
+    font-size: 15px;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reset:hover {
+    background-image: url("https://media.istockphoto.com/id/1267520400/id/vektor/efek-cahaya-neon-menunjukkan-garis-dalam-arah-diagonal.jpg?s=170667a&w=0&k=20&c=ZV1QcGMGCVlfrQ00_v4782VLEIMnJ9dgH2IwsVI-D44=");
+}
+
+.reset:active {
+    background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-diagonal-line-neon-light-background-picture-image_1237642.jpg");
+}
+
+.reset-scores {
+    margin-top: 0;
+    width: 150px;
+    height: 40px;
+    border: 2px solid orange;
+    box-shadow: 15px 15px 50px orangered;
+    border-radius: 12px;
+    font-family: 'Press Start 2P', cursive;
+    color: #FFF;
+    font-size: 15px;
+    background-color: black;
+    background-size: cover;
+}
+
+.reset-scores:hover {
+    background-image: url("https://media.istockphoto.com/id/1267520400/id/vektor/efek-cahaya-neon-menunjukkan-garis-dalam-arah-diagonal.jpg?s=170667a&w=0&k=20&c=ZV1QcGMGCVlfrQ00_v4782VLEIMnJ9dgH2IwsVI-D44=");
+}
+
+.reset-scores:active {
+    background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-diagonal-line-neon-light-background-picture-image_1237642.jpg");
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 12px;
+    border: 10px #9d00ff;
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        order: +1;
+    }
+}
