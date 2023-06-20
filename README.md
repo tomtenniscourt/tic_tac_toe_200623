@@ -1,4 +1,4 @@
-# Tic_Tac_Toe_PROJECT1
+# Tic Tac Toe
 
 Project One for the SEI course: Tic Tac Toe
 
