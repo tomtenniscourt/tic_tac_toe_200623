@@ -1,59 +1,137 @@
-# Tic Tac Toe
+ReadMe Project One: Tic Tac Toe
 
-Project One for the SEI course: Tic Tac Toe
+Description
 
-Installation: None needed
+This is a simple game of Tic Tac Toe, whereby two players can play against each other, customise their player names, and keep track of their individual scores against the other player.
+The game is centred around an 1980's retro space arcade, whilst also using modern 21st century emojis as game counters. 
+Deployment link
 
-Links:
+https://tomtenniscourt.github.io/tic_tac_toe_200623/ 
 
-Preview:
 
-This is a simple game of Tic Tac Toe, whereby two players are able to play against each other, customise their player names, and keep track of their indivudal scores against the other player.
+Getting Started/Code Installation
 
-The the is centered around an 1980's retro space arcade, whilst also using modern 21st century emojis as game counters
+The game’s link can be found here. No login information is required, however please do add your names in the required input to add a bit of personality to your session. 
 
-Technology Used:
--HTML
--CSS
--JavaScript
--Google Fonts
--Locally stored images
--jspaint.app
--Apple emojis
 
-Approach:
-The main approach i took for this game was to create a 3x3 grid of interactive buttons, and attached event listeners to all of them that would detect when a player clicked on them.
 
-When a player clicks on the button, the code will either display their counter (emoji) or do nothing if it has already been marked. Winning conditions were defined in an array (e.g. buttons in a straight row) and a player wins if they have met one of these conditions.
+Timeframe & Working Team (Solo/Pair/Group)
 
-I included a `checkWin` function in the JavaScript which ultimately takes the current player as an argument, and checks if any of the winning combinations were achieved by the player.
+The game was entirely worked on by me over roughly a week. Occasionally I would have a second pair of eyes look over certain sections to access where certain issues were, however this was minimal. 
 
-I then used the `some` method in order to iterate over each element in the wimming combinations array and return true if any of the combinations are found to have been achieved by the current player
 
-An alert then declares that player the winner and the game resets.
+Technologies Used
 
-If their is a draw, one player must click on the reset button which lears all the squares on the grid and sets the current player back to the first player.
+The following technologies were used throughout the process:
+HTML 
+CSS 
+JavaScript 
+Google Fonts 
+Locally stored images 
+jspaint.app 
+Apple emojis
 
-Additonally, players can input their names and have them displayed both on the scoreboard and in any subsequent winning alert. The button used to acomplish this is prevented from refreshing the page, and if no names are detected then default names are used.
 
-The scoreboard will also log the wins of each player, until the scoreboard is reset.
+Brief
 
-Main Features:
--Functioning Tic Tac Toe playable by two users on the same machine
--Hover and activate background changes for all buttons on the page
--Functioning scoreboard that updates with each win
--Ability to customise each player's name
+The following brief was given to me to work from:
 
-User Story:
--As a user, I should be able to start a new tic tac toe game
--As a user, I should be able to click on a square to add X first and then O, and so on
--As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
--As a user, I should not be able to click the same square twice
--As a user, I should be shown a message when I win, lose or tie
--As a user, I should not be able to continue playing once I win, lose, or tie
--As a user, I should be able to play the game again without refreshing the page
+Build a web application from scratch, without a starter codebase
+Use your programming skills to work out the game logic for a simple game like Tic Tac Toe
+Separate HTML, CSS, and JavaScript files in your application
+Build an application to a specification that someone else gives you
+Build a dynamic game that allows two players to compete from the same computer
+Craft a README.md file that explains your app to the world
 
-What is left?
--I want to create an intelligent AI that a sungle player can play against. I did have, at one point, a very dumb one, but decided it was better to remove and focus on improve other factors
--I want to implement a code that will enable players to choose their own game counter from a range of select emojis
--I want to include sound when certain buttons are activated or conditions are met (e.g. a player wins the game)
+Technical requirements: 
+Render a game board in the browser
+Switch turns between X and O (or whichever markers you select)
+Visually display which side won if a player gets three in a row, or show a draw if neither player wins
+Include separate HTML / CSS / JavaScript files
+Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+Use JavaScript for DOM manipulation
+Deploy your game online, where the rest of the world can access it
+You can use GitHub Pages for deploying your project
+Use semantic markup for HTML and CSS (adhere to best practices)
+Have well-formatted, and well-commented code
+
+User Stories:
+As a user, I should be able to start a new tic tac toe game
+As a user, I should be able to click on a square to add X first and then O, and so on
+As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
+As a user, I should not be able to click the same square twice
+As a user, I should be shown a message when I win, lose or tie
+As a user, I should not be able to continue playing once I win, lose, or tie
+As a user, I should be able to play the game again without refreshing the page
+Planning
+
+I started by sketching out a basic wireframe using a very basic paint app, and then proceeded to create my vision using very basic HTML and CSS. My belief was that if I could see everything visualised on the screen, it would be easier to create the necessary JavaScript that would interact with everything. 
+
+The wireframe, and subsequent HTML/CSS first draft can be seen below:
+
+
+
+Wireframe:
+
+
+First Draft Without JavaScript, or CSS
+
+
+
+
+
+
+Build/Code Process
+
+The code begins by declaring and initializing various variables and constants. These include currentPlayer (the emoji symbol of the current player), playerXScore and playerOScore (the scores for Player X and Player O), playerOneName and playerTwoName (the names of the players), and several references to elements in the HTML document using querySelector and querySelectorAll.
+ 
+The winningCombos array is defined, which contains arrays representing the index combinations that would result in a winning move in the game of Tic-Tac-Toe.
+ 
+Event listeners are added to each cell in the gameboard. When a cell is clicked, the associated event listener function is executed. It first checks if the cell is already marked by checking its textContent. If the cell is empty, it fills the cell with the emoji of the current player (currentPlayer).
+ 
+After marking the cell, the function checks if the current player has won by calling the checkWin function, passing the currentPlayer. The checkWin function iterates through the winningCombos array and checks if any of the winning combinations have been achieved by the current player. If there is a win, an alert is displayed with the name of the winning player, the score is updated using the updateScore function, and the game is reset by calling the reset function.
+ 
+If there is no win, the function checks if the game is a draw by calling the checkTie function, which checks if all cells are filled. If the game is a draw, an alert is displayed, and the game is reset.
+ 
+If neither win nor draw occurs, the turn is switched to the next player by updating the currentPlayer variable.
+ 
+The reset function is called when the reset button is clicked. It clears the content of all cells, resets the currentPlayer to Player X, and prepares the game for a new round.
+ 
+The resetScores function is called when the reset scores button is clicked. It resets the scores for both players to zero, updates the score display, and prepares the game for a new round.
+ 
+The player name form has a submit event listener attached to it. When the form is submitted, it prevents the default form submission behaviour. It retrieves the player names entered by the users, updates the playerOneName and playerTwoName variables, updates the score display with the new names, resets the form, and adds CSS classes to the score displays for a styling effect.
+
+
+
+
+
+Challenges
+
+I initially wanted to add the option of playing against the computer, however I found creating an intelligent AI to be incredibly hard. Furthermore, I kept experiencing bugs when having both a single player and multiplayer mode in the game, so elected to stick with the former as it was more complete.
+Getting each player's name to appear on the scoreboard was challenging as well, but I was eventually able to do this. At one point, I realised quite far into the project that the wrong player was getting credited with wins, however this was relatively easy to solve.
+I faced some difficulty with CSS styling as well.
+Most of these challenges I managed to solve by going through old course notes, previous homeworks and exercises, and researching on websites such as W3, YouTube, GeeksForGeeks, and CodeBrainer. I was also able to draw on the experience of my classmates and tutors - such as asking one of them to proofread my code when it stopped working.
+Wins
+
+I am very happy with how the scoreboard turned out – Players can add their names, which will display to the scoreboard and will in turn update with each player’s win. 
+
+I was also extremely pleased with the overall layout (the “Holy Grail Layout”) as it enabled me to visualise early on where everything would end up, and enabled me to do this with relative ease. 
+
+Some of the feedback I received also praised the hover effect that some of the buttons/grids had, so I will also take that as a win. 
+
+Key Learnings/Takeaways
+
+Key learnings for me were how to effectively navigate through HTML and CSS whilst using the ‘Holy Grail’ layout for the page – it makes sorting everything out much more simple, and keeps everything tidy. 
+
+Bugs
+
+There were two notable bugs that I discovered along the way. One was that my classes and sections in CSS and HTML were producing lines that I could not find where they were coming from. To rectify this, I rewrote the code, and whilst I could not find where the mistake was, the lines disappeared once I had rewritten the respective sections.
+Another bug that is still persistent, is that occasionally the scoreboard will display small white lines - however this is rare and is largely insignificant.
+
+Future Improvements
+
+I want to create an intelligent AI that a single player can play against. I did have, at one point, a very basic one that would make a random move rather than an intelligent move, but decided it was better to remove and focus on improve other factors -I want to implement a code that will enable players to choose their own game counter from a range of select emojis -I want to include sound when certain buttons are activated or conditions are met (e.g. a player wins the game)
+
+
+
+
