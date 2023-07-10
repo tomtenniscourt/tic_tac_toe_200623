@@ -83,23 +83,29 @@ First Draft Without JavaScript, or CSS
 
 Build/Code Process
 
-The code begins by declaring and initializing various variables and constants. These include currentPlayer (the emoji symbol of the current player), playerXScore and playerOScore (the scores for Player X and Player O), playerOneName and playerTwoName (the names of the players), and several references to elements in the HTML document using querySelector and querySelectorAll.
+After I had first built the CSS and HTML, i turned my attention to the JavaScript logic, which can be broken down as follows: 
+
+
+The winningCombos array defines all the possible winning combinations in the Tic-Tac-Toe game. Each sub-array represents three cell indexes that would result in a win if the same player marks those cells.
  
-The winningCombos array is defined, which contains arrays representing the index combinations that would result in a winning move in the game of Tic-Tac-Toe.
+Event listeners are then attached to different elements. For each cell in the cells collection, a click event listener is added. When a cell is clicked, the associated event listener function is executed. You can add your custom code inside this event listener to handle the logic of marking the cell, checking for wins or draws, and updating the game state.
+The reset button (resetBtn) has a click event listener attached to it, which calls the reset function when clicked.
  
-Event listeners are added to each cell in the gameboard. When a cell is clicked, the associated event listener function is executed. It first checks if the cell is already marked by checking its textContent. If the cell is empty, it fills the cell with the emoji of the current player (currentPlayer).
+The reset scores button (resetScoresBtn) has a click event listener attached to it, which calls the resetScores function when clicked.
  
-After marking the cell, the function checks if the current player has won by calling the checkWin function, passing the currentPlayer. The checkWin function iterates through the winningCombos array and checks if any of the winning combinations have been achieved by the current player. If there is a win, an alert is displayed with the name of the winning player, the score is updated using the updateScore function, and the game is reset by calling the reset function.
+The player name form (form) has a submit event listener attached to it. When the form is submitted, the associated event listener function is executed. Inside this function, you can retrieve the player names entered by the users and update the necessary variables and elements accordingly.
  
-If there is no win, the function checks if the game is a draw by calling the checkTie function, which checks if all cells are filled. If the game is a draw, an alert is displayed, and the game is reset.
+The code also contains several helper functions used in the game logic.
  
-If neither win nor draw occurs, the turn is switched to the next player by updating the currentPlayer variable.
+The checkWin function checks if the current player has won by iterating through the winningCombos array and comparing the content of the cells.
  
-The reset function is called when the reset button is clicked. It clears the content of all cells, resets the currentPlayer to Player X, and prepares the game for a new round.
  
-The resetScores function is called when the reset scores button is clicked. It resets the scores for both players to zero, updates the score display, and prepares the game for a new round.
+The checkTie function checks if the game has ended in a draw by verifying if all cells are filled.
+The updateScore function updates the score for the current player and updates the score display accordingly.
  
-The player name form has a submit event listener attached to it. When the form is submitted, it prevents the default form submission behaviour. It retrieves the player names entered by the users, updates the playerOneName and playerTwoName variables, updates the score display with the new names, resets the form, and adds CSS classes to the score displays for a styling effect.
+The reset function clears the gameboard by resetting the content of all cells and sets the currentPlayer back to "🚀".
+ 
+The resetScores function resets the scores of both players to zero and updates the score display accordingly.
 
 
 
