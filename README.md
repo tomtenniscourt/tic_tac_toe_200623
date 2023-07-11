@@ -96,9 +96,6 @@ The wireframe, and subsequent HTML/CSS first draft can be seen below:
 
 <img width="1485" alt="Screenshot 2023-07-11 at 11 22 08" src="https://github.com/tomtenniscourt/tic_tac_toe_200623/assets/127535435/49ab1a44-b5b3-4b66-9c42-e09a3997c76d">
 
-<img width="1482" alt="Screenshot 2023-07-11 at 11 20 19" src="https://github.com/tomtenniscourt/tic_tac_toe_200623/assets/127535435/366722d7-a02b-48e6-9b14-6cbdbe42a23a">
-
-
 ### Finished Product: 
 
 ![Uploading Screenshot 2023-07-11 at 11.24.25.png…]()
