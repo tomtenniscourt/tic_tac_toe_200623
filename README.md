@@ -45,43 +45,43 @@ The following brief was given to me to work from:
 
 -Craft a README.md file that explains your app to the world
 
-**Technical requirements: 
-**
--Render a game board in the browser
+**Technical requirements:**
 
--Switch turns between X and O (or whichever markers you select)
+- Render a game board in the browser
 
--Visually display which side won if a player gets three in a row, or show a draw if neither player wins
+- Switch turns between X and O (or whichever markers you select)
 
--Include separate HTML / CSS / JavaScript files
+- Visually display which side won if a player gets three in a row, or show a draw if neither player wins
 
--Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+- Include separate HTML / CSS / JavaScript files
 
--Use JavaScript for DOM manipulation
+- Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
 
--Deploy your game online, where the rest of the world can access it
+- Use JavaScript for DOM manipulation
 
--You can use GitHub Pages for deploying your project
+- Deploy your game online, where the rest of the world can access it
 
--Use semantic markup for HTML and CSS (adhere to best practices)
+- You can use GitHub Pages for deploying your project
 
--Have well-formatted, and well-commented code
+- Use semantic markup for HTML and CSS (adhere to best practices)
 
-**User Stories:
-**
--As a user, I should be able to start a new tic tac toe game
+- Have well-formatted, and well-commented code
 
--As a user, I should be able to click on a square to add X first and then O, and so on
+**User Stories:**
 
--As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
+- As a user, I should be able to start a new tic tac toe game
 
--As a user, I should not be able to click the same square twice
+- As a user, I should be able to click on a square to add X first and then O, and so on
 
--As a user, I should be shown a message when I win, lose or tie
+- As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
 
--As a user, I should not be able to continue playing once I win, lose, or tie
+- As a user, I should not be able to click the same square twice
 
--As a user, I should be able to play the game again without refreshing the page
+- As a user, I should be shown a message when I win, lose or tie
+
+- As a user, I should not be able to continue playing once I win, lose, or tie
+
+- As a user, I should be able to play the game again without refreshing the page
 
 ## Planning
 
@@ -138,7 +138,8 @@ I initially wanted to add the option of playing against the computer, however I 
 Getting each player's name to appear on the scoreboard was challenging as well, but I was eventually able to do this. At one point, I realised quite far into the project that the wrong player was getting credited with wins, however this was relatively easy to solve.
 I faced some difficulty with CSS styling as well.
 Most of these challenges I managed to solve by going through old course notes, previous homeworks and exercises, and researching on websites such as W3, YouTube, GeeksForGeeks, and CodeBrainer. I was also able to draw on the experience of my classmates and tutors - such as asking one of them to proofread my code when it stopped working.
-Wins
+
+## Wins
 
 I am very happy with how the scoreboard turned out – Players can add their names, which will display to the scoreboard and will in turn update with each player’s win. 
 
@@ -146,17 +147,17 @@ I was also extremely pleased with the overall layout (the “Holy Grail Layout�
 
 Some of the feedback I received also praised the hover effect that some of the buttons/grids had, so I will also take that as a win. 
 
-Key Learnings/Takeaways
+## Key Learnings/Takeaways
 
 Key learnings for me were how to effectively navigate through HTML and CSS whilst using the ‘Holy Grail’ layout for the page – it makes sorting everything out much more simple, and keeps everything tidy. 
 
-**Bugs**
+### Bugs
 
 There were two notable bugs that I discovered along the way. One was that my classes and sections in CSS and HTML were producing lines that I could not find where they were coming from. To rectify this, I rewrote the code, and whilst I could not find where the mistake was, the lines disappeared once I had rewritten the respective sections.
 Another bug that is still persistent, is that occasionally the scoreboard will display small white lines - however this is rare and is largely insignificant.
 
-**Future Improvements
-**
+### Future Improvements
+
 I want to create an intelligent AI that a single player can play against. I did have, at one point, a very basic one that would make a random move rather than an intelligent move, but decided it was better to remove and focus on improve other factors -I want to implement a code that will enable players to choose their own game counter from a range of select emojis -I want to include sound when certain buttons are activated or conditions are met (e.g. a player wins the game)
 
 
