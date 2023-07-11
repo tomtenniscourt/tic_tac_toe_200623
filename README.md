@@ -1,27 +1,25 @@
 ReadMe Project One: Tic Tac Toe
 
-Description
-
+**Description
+**
 This is a simple game of Tic Tac Toe, whereby two players can play against each other, customise their player names, and keep track of their individual scores against the other player.
 The game is centred around an 1980's retro space arcade, whilst also using modern 21st century emojis as game counters. 
-Deployment link
 
+**Deployment link
+**
 https://tomtenniscourt.github.io/tic_tac_toe_200623/ 
-
-
-Getting Started/Code Installation
 
 The game’s link can be found here. No login information is required, however please do add your names in the required input to add a bit of personality to your session. 
 
 
 
-Timeframe & Working Team (Solo/Pair/Group)
-
+**Timeframe & Working Team (Solo/Pair/Group)
+**
 The game was entirely worked on by me over roughly a week. Occasionally I would have a second pair of eyes look over certain sections to access where certain issues were, however this was minimal. 
 
 
-Technologies Used
-
+**Technologies Used
+**
 The following technologies were used throughout the process:
 HTML 
 CSS 
@@ -32,37 +30,38 @@ jspaint.app
 Apple emojis
 
 
-Brief
-
+**Brief
+**
 The following brief was given to me to work from:
 
-Build a web application from scratch, without a starter codebase
-Use your programming skills to work out the game logic for a simple game like Tic Tac Toe
-Separate HTML, CSS, and JavaScript files in your application
-Build an application to a specification that someone else gives you
-Build a dynamic game that allows two players to compete from the same computer
-Craft a README.md file that explains your app to the world
+-Build a web application from scratch, without a starter codebase
+-Use your programming skills to work out the game logic for a simple game like Tic Tac Toe
+-Separate HTML, CSS, and JavaScript files in your application
+-Build an application to a specification that someone else gives you
+-Build a dynamic game that allows two players to compete from the same computer
+-Craft a README.md file that explains your app to the world
 
 Technical requirements: 
-Render a game board in the browser
-Switch turns between X and O (or whichever markers you select)
-Visually display which side won if a player gets three in a row, or show a draw if neither player wins
-Include separate HTML / CSS / JavaScript files
-Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
-Use JavaScript for DOM manipulation
-Deploy your game online, where the rest of the world can access it
-You can use GitHub Pages for deploying your project
-Use semantic markup for HTML and CSS (adhere to best practices)
-Have well-formatted, and well-commented code
+-Render a game board in the browser
+-Switch turns between X and O (or whichever markers you select)
+-Visually display which side won if a player gets three in a row, or show a draw if neither player wins
+-Include separate HTML / CSS / JavaScript files
+-Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+-Use JavaScript for DOM manipulation
+-Deploy your game online, where the rest of the world can access it
+-You can use GitHub Pages for deploying your project
+-Use semantic markup for HTML and CSS (adhere to best practices)
+-Have well-formatted, and well-commented code
 
 User Stories:
-As a user, I should be able to start a new tic tac toe game
-As a user, I should be able to click on a square to add X first and then O, and so on
-As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
-As a user, I should not be able to click the same square twice
-As a user, I should be shown a message when I win, lose or tie
-As a user, I should not be able to continue playing once I win, lose, or tie
-As a user, I should be able to play the game again without refreshing the page
+-As a user, I should be able to start a new tic tac toe game
+-As a user, I should be able to click on a square to add X first and then O, and so on
+-As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
+-As a user, I should not be able to click the same square twice
+-As a user, I should be shown a message when I win, lose or tie
+-As a user, I should not be able to continue playing once I win, lose, or tie
+-As a user, I should be able to play the game again without refreshing the page
+
 Planning
 
 I started by sketching out a basic wireframe using a very basic paint app, and then proceeded to create my vision using very basic HTML and CSS. My belief was that if I could see everything visualised on the screen, it would be easier to create the necessary JavaScript that would interact with everything. 
