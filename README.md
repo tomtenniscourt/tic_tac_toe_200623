@@ -98,7 +98,7 @@ The wireframe, and subsequent HTML/CSS first draft can be seen below:
 
 ### Finished Product: 
 
-![Uploading Screenshot 2023-07-11 at 11.24.25.png…]()
+<img width="1920" alt="Screenshot 2023-08-10 at 12 33 53" src="https://github.com/tomtenniscourt/tic_tac_toe_200623/assets/127535435/97832262-512b-4e90-925c-5192848e9703">
 
 
 
